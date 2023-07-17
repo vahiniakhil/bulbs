@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 20px;
+            width: 100px;
+            margin: 20px;
+        }
+        #bulb{
+            height: 200px;
+            width: 150px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <button onclick="turnon()">on</button>
+    <img id="bulb"src="/assert/bulb off.jpg" alt="/assert/bulb on-png-8.png"> 
+    <button  onclick="turnoff()">off</button> 
+    
+    <script>
+        function turnon(){
+            document.getElementById("bulb").src="/assert/bulb on-png-8.png";
+        }
+        function turnoff()
+        {
+            document.getElementById("bulb").src="/assert/bulb off.jpg";
+        }
+    </script>
+</body>
+</html>
